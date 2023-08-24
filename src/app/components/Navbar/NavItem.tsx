@@ -8,7 +8,7 @@ type NavItemProps = {
 const NavItem: React.FC<NavItemProps> = ({ item }) => {
   return (
     <li className="m-4 cursor-pointer">
-      <Link href={`#${item}`}>{item}</Link>
+      <Link href={`#${item.toLowerCase()}`}>{item}</Link>
     </li>
   );
 };
