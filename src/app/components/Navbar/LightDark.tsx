@@ -4,10 +4,10 @@ import { BsSun, BsMoon } from 'react-icons/bs';
 const LightDark = () => {
   return (
     <>
-      <li className="m-4 cursor-pointer">
+      <li className="ml-5 cursor-pointer">
         <BsSun />
       </li>
-      <li className="m-4 cursor-pointer">
+      <li className="cursor-pointer mr-5">
         <BsMoon />
       </li>
     </>
