@@ -1,4 +1,4 @@
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-cyan-950">
       <Navbar />
       <Profile />
       <About />
