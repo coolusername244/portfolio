@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 
 type NavItemProps = {
@@ -7,7 +7,11 @@ type NavItemProps = {
 };
 
 const NavItem: React.FC<NavItemProps> = ({ item }) => {
-  const navbarHeight = 0.1 * window.innerHeight;
+  const [navbarHeight, setNavbarHeight] = React.useState(0);
+
+  useEffect(() => {
+    setNavbarHeight(0.1 * window.innerHeight);
+  }, []);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
