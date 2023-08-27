@@ -35,7 +35,7 @@ const Navbar = () => {
         {items.map((item, index) => (
           <li
             key={index}
-            className={`ml-5 cursor-pointer group hover:tracking-widest transition-all duration-2000 ${
+            className={`mr-5 cursor-pointer group hover:tracking-widest transition-all duration-2000 ${
               activeIndex === index || hoverIndex === index
                 ? 'tracking-widest'
                 : ''
