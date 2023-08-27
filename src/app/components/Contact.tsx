@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Contact = () => {
-  return <div id="contact">Contact</div>;
+  return (
+    <section id="contact" className="h-[90vh]">
+      Contact
+    </section>
+  );
 };
 
 export default Contact;

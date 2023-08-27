@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Projects = () => {
-  return <div id="projects">Projects</div>;
+  return (
+    <section id="projects" className="h-[90vh]">
+      Projects
+    </section>
+  );
 };
 
 export default Projects;
