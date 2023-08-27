@@ -27,12 +27,9 @@ const NavItem: React.FC<NavItemProps> = ({ item }) => {
 
   return (
     <>
-      <li className="ml-5 cursor-pointer group hover:tracking-widest transition-all duration-2000">
-        <Link href={`#${item.toLowerCase()}`} onClick={handleClick}>
-          {item}
-        </Link>
-        <span className="block max-w-0 group-hover:max-w-full transition-all  h-[1px] bg-emerald-500"></span>
-      </li>
+      <Link href={`#${item.toLowerCase()}`} onClick={handleClick}>
+        {item}
+      </Link>
     </>
   );
 };
