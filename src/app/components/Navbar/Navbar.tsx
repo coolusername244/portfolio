@@ -1,7 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import NavItem from './NavItem';
-import LightDark from './LightDark';
 
 const items: string[] = ['About', 'Projects', 'Contact'];
 
@@ -55,7 +54,6 @@ const Navbar = () => {
             ></span>
           </li>
         ))}
-        <LightDark />
       </ul>
     </nav>
   );
