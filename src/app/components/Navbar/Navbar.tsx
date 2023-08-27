@@ -41,7 +41,7 @@ const Navbar = () => {
   }, [activeIndex]);
 
   return (
-    <nav className="sticky top-0 h-[10vh] flex items-center w-screen border-b border-emerald-500 backdrop-blur-md bg-black/50">
+    <nav className="sticky top-0 h-[10vh] flex items-center w-screen border-b border-emerald-500 backdrop-blur-2xl bg-black/30">
       <ul className="flex ml-auto">
         {items.map((item, index) => (
           <li
