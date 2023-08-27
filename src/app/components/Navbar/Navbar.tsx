@@ -7,30 +7,42 @@ const items: string[] = ['About', 'Projects', 'Contact'];
 const Navbar = () => {
   const [activeIndex, setActiveIndex] = useState(-1);
   const [hoverIndex, setHoverIndex] = useState(-1);
+  console.log('activeIndex---', activeIndex, 'hoverIndex---', hoverIndex);
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = items.map(item =>
-        document.querySelector(`#${item.toLowerCase()}`),
-      ) as HTMLElement[];
-      const newActiveIndex = sections.findIndex(section => {
-        const sectionTop = section.getBoundingClientRect().top || 0;
-        const sectionBottom = section.getBoundingClientRect().bottom || 0;
-        return (
-          sectionTop <= window.innerHeight * 0.11 &&
-          sectionBottom >= window.innerHeight * 0.11
-        );
+      const navBarHeight = window.innerHeight * 0.1;
+      const scrollPosition = window.scrollY + navBarHeight;
+
+      const newActiveIndex = items.findIndex(item => {
+        const section = document.querySelector(`#${item.toLowerCase()}`);
+        if (section) {
+          const sectionTop =
+            section.getBoundingClientRect().top + window.scrollY;
+          const sectionBottom =
+            section.getBoundingClientRect().bottom + window.scrollY;
+          return (
+            sectionTop <= scrollPosition + navBarHeight &&
+            scrollPosition + navBarHeight <= sectionBottom
+          );
+        }
+        return false;
       });
+
       if (newActiveIndex !== activeIndex) {
         setActiveIndex(newActiveIndex);
+        setHoverIndex(-1);
       }
     };
+
+    handleScroll();
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, [activeIndex]);
 
   return (
-    <nav className="sticky top-0 h-[10vh] flex items-center w-screen border-b border-emerald-500 backdrop-blur-md bg-black/30">
+    <nav className="sticky top-0 h-[10vh] flex items-center w-screen border-b border-emerald-500 backdrop-blur-md bg-black/50">
       <ul className="flex ml-auto">
         {items.map((item, index) => (
           <li
