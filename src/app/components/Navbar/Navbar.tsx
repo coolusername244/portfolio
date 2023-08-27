@@ -7,7 +7,6 @@ const items: string[] = ['About', 'Projects', 'Contact'];
 const Navbar = () => {
   const [activeIndex, setActiveIndex] = useState(-1);
   const [hoverIndex, setHoverIndex] = useState(-1);
-  console.log('activeIndex---', activeIndex, 'hoverIndex---', hoverIndex);
 
   useEffect(() => {
     const handleScroll = () => {
