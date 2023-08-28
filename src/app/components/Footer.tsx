@@ -3,9 +3,9 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="border-t border-emerald-500 py-7 bg-black/30">
-      <div className="flex justify-between">
-        <div className="flex flex-row">
-          <p className="ml-5 italic text-slate-400">
+      <div className="block md:flex justify-between">
+        <div className="justify-center flex flex-row">
+          <p className="pb-2 md:pb-0 md:ml-5 italic text-slate-400">
             Designed and developed by&nbsp;
           </p>
           <a
@@ -19,7 +19,7 @@ const Footer = () => {
             </span>
           </a>
         </div>
-        <div className="flex flex-row">
+        <div className="justify-center flex flex-row">
           <p className="italic text-slate-400">Built with&nbsp;</p>
           <a
             href="https://nextjs.org/"
@@ -35,7 +35,7 @@ const Footer = () => {
           <a
             href="https://tailwindcss.com/"
             target="_blank"
-            className="text-emerald-500 transition-all duration-2000 mr-5 italic"
+            className="text-emerald-500 transition-all duration-2000 md:mr-5 italic"
           >
             <span className="group">
               Tailwind
