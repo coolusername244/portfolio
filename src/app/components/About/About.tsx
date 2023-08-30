@@ -4,7 +4,7 @@ import { ImageLink } from '../../types/ImageLink';
 import { frontEnd, backEnd, tools, frameworks } from './TechStackData';
 
 const renderImageLinks = (items: ImageLink[]) => (
-  <div className="grid grid-cols-3 place-items-center bg-white/10">
+  <div className="grid grid-cols-3 md:grid-cols-4 place-items-center rounded-xl bg-white/10">
     {items.map((item, index) => (
       <a key={index} href={item.link} target="_blank" rel="noopener noreferrer">
         <Image
