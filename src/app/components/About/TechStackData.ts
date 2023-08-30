@@ -42,6 +42,7 @@ export const frontEnd: ImageLink[] = [
     link: 'https://getbootstrap.com/',
   },
 ];
+
 export const backEnd: ImageLink[] = [
   {
     src: require('../../assets/images/express.png'),
@@ -64,6 +65,7 @@ export const backEnd: ImageLink[] = [
     link: 'https://www.python.org/',
   },
 ];
+
 export const tools: ImageLink[] = [
   {
     src: require('../../assets/images/vite.svg'),
@@ -106,6 +108,7 @@ export const tools: ImageLink[] = [
     link: 'https://www.postman.com/',
   },
 ];
+
 export const frameworks: ImageLink[] = [
   {
     src: require('../../assets/images/nextjs.png'),
