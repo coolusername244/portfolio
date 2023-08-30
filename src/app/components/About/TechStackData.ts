@@ -7,11 +7,6 @@ export const frontEnd: ImageLink[] = [
     link: 'https://react.dev/',
   },
   {
-    src: require('../../assets/images/vite.svg'),
-    alt: 'Vite',
-    link: 'https://vitejs.dev/',
-  },
-  {
     src: require('../../assets/images/javascript.png'),
     alt: 'JavaScript',
     link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
@@ -70,6 +65,11 @@ export const backEnd: ImageLink[] = [
   },
 ];
 export const tools: ImageLink[] = [
+  {
+    src: require('../../assets/images/vite.svg'),
+    alt: 'Vite',
+    link: 'https://vitejs.dev/',
+  },
   {
     src: require('../../assets/images/git.png'),
     alt: 'git',
