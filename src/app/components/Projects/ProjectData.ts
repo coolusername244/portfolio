@@ -31,4 +31,11 @@ export const projects = [
     liveLink: 'https://coolusername244.github.io/Google-frontend/',
     techUsed: ['HTML', 'CSS', 'Bootstrap'],
   },
+  {
+    name: 'Portfolio',
+    description: 'My personal portfolio website, what you see here!',
+    githubLink: 'https://github.com/coolusername244/portfolio',
+    liveLink: 'https://lee-sheppard.com/',
+    techUsed: ['TypeScript', 'NextJS 13', 'TailwindCSS'],
+  },
 ];
