@@ -41,7 +41,7 @@ const Projects = () => {
       <h2 className="text-2xl font-mono font-bold text-center mt-10">
         Projects
       </h2>
-      <div className="mt-10 md:grid md:grid-cols-2 md:gap-5">
+      <div className="mt-10 md:grid md:grid-cols-2">
         {renderProjects(projects)}
       </div>
     </section>
