@@ -37,6 +37,9 @@ const About = () => {
           doloremque!
         </p>
       </article>
+      <button className="bg-emerald-500 hover:bg-emerald-700 p-3 rounded-md transition duration-200 ease-in-out">
+        Want a copy of my resume?
+      </button>
       <article className="">
         <h2 className="text-2xl font-mono font-bold text-center mt-5">
           What I&apos;ve Been Using
