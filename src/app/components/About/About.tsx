@@ -38,9 +38,11 @@ const About = () => {
         </p>
       </article>
       <div className="w-[100%] my-9 text-center">
-        <button className="bg-emerald-500 hover:bg-emerald-700 p-3 rounded-md transition duration-200 ease-in-out">
-          Want a copy of my resume?
-        </button>
+        <a href="/lee-sheppard-resume.pdf" download>
+          <button className="bg-emerald-500 hover:bg-emerald-700 p-3 rounded-md transition duration-200 ease-in-out">
+            Want a copy of my resume?
+          </button>
+        </a>
       </div>
       <article className="">
         <h2 className="text-2xl font-mono font-bold text-center mt-5">
