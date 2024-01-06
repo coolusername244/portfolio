@@ -6,7 +6,7 @@ import { Project } from '../../types/Project';
 
 const renderProjects = (items: Project[]) =>
   items.map((item, index) => (
-    <article key={index} className="rounded-xl bg-white/10 m-5 p-5">
+    <article key={index} className="rounded-xl bg-white/10 m-5 p-5 lg:w-[70%]">
       <h3 className="text-lg font-mono text-center mb-5">{item.name}</h3>
       <p>{item.description}</p>
       <p className="flex mt-3 items-center">
@@ -41,7 +41,7 @@ const Projects = () => {
       <h2 className="text-2xl font-mono font-bold text-center mt-10">
         Projects
       </h2>
-      <div className="mt-10 md:grid md:grid-cols-2">
+      <div className="mt-10 md:grid md:grid-cols-2 justify-items-center">
         {renderProjects(projects)}
       </div>
     </section>
