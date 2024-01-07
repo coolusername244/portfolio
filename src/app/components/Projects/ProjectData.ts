@@ -1,5 +1,13 @@
 export const projects = [
   {
+    name: 'Öppna Skolplattformen',
+    description:
+      'Öppna Skolplattformen is an open source project aimed at simplifying communication between parents and teachers within the Stockholm region. Tasks for this project were to update the dependencies from RN 0.68 to 0.72 using the mikado method to update the app piece by piece and building a FastLane CI/CD pipeline for the Google Play Store',
+    githubLink: 'https://github.com/kolplattformen/skolplattformen',
+    liveLink: 'https://skolplattformen.org/',
+    techUsed: ['React Native', 'TypeScript'],
+  },
+  {
     name: 'Stock Sense',
     description:
       'A stock trading simulation app designed for newcomers to practice and learn about stock trading risk free.',
