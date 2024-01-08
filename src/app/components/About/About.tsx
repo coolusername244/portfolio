@@ -7,34 +7,40 @@ const About = () => {
       id="about"
       className="min-h-[90vh] w-[90%] items-center ml-[5%] md:pt-[5vh]"
     >
-      <article>
+      <article className="px-12">
         <h2 className="text-2xl font-mono font-bold text-center">
-          A Bit About Me
+          Hello there! 👋
         </h2>
-        <p className="my-5 text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-          deserunt possimus ipsam odit eum, saepe incidunt earum doloremque amet
-          libero hic at similique tempore sed. Atque expedita aperiam veritatis,
-          mollitia aliquam inventore numquam optio dolorum magnam laudantium
-          officia ullam et odio accusamus ut consectetur aliquid cumque
-          exercitationem animi aspernatur. Itaque, minus ipsam. Facere est
-          reprehenderit nobis corrupti et iste. Quos quo consequuntur eos
-          placeat nam consectetur modi ipsam fuga iste rem voluptate, culpa eum
-          accusantium unde provident dignissimos corrupti ducimus nulla fugiat,
-          officia aperiam ipsa dolores id! Ab laudantium magni quasi, minus
-          labore veniam quisquam aperiam eos veritatis consequuntur modi facere
-          sed aspernatur praesentium enim, repellat earum doloremque error
-          exercitationem voluptatum. Molestiae aspernatur laudantium quae iste
-          a. Quis asperiores assumenda voluptas quam, obcaecati quod nulla atque
-          dolores quaerat temporibus sequi saepe error, recusandae mollitia
-          veritatis. Expedita optio reiciendis sunt excepturi iure sequi
-          cupiditate! Eaque vel mollitia amet maiores placeat voluptatum tenetur
-          nobis sit ullam ut? Aliquam quo consectetur neque ea fuga? Quasi
-          pariatur dicta a fugit ullam, iusto nemo rerum maxime animi velit.
-          Consequuntur voluptate ab, nisi laboriosam deleniti fugit! Sapiente
-          officia molestias est error tempore nemo magni eius a temporibus
-          asperiores voluptatibus, saepe natus molestiae, aut eligendi vero
-          doloremque!
+        <p className="my-5 text-left">
+          As someone who always had an eye for improvements in efficiency within
+          a business yet struggled with the gaining momentum against the
+          monolithic business structures, I decided to become a part of the
+          solution.
+        </p>
+        <p className="my-5 text-left">
+          My first &quot;Hello World&quot; was written in February 2020 when I
+          tried the 5 day coding challenge from{' '}
+          <a
+            className="underline text-emerald-500"
+            target="_blank"
+            href="https://codeinstitute.net/se/5-day-coding-challenge/"
+          >
+            Code Institute
+          </a>
+          .
+        </p>
+        <p className="my-5 text-left">
+          Since then I have made numerous websites from a Google front end clone
+          to a functional e-commerce store written with Django and Python and a
+          stock trading simulator built with NextJS
+        </p>
+        <p className="my-5 text-left">
+          But thats enough of me, carry to see what I have been up to! Want to
+          get in touch? Click{' '}
+          <a href="#contact" className="underline text-emerald-500">
+            here
+          </a>
+          !
         </p>
       </article>
       <div className="w-[100%] my-9 text-center">
