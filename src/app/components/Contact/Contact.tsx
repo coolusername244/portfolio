@@ -4,9 +4,9 @@ import SocialIcons from './SocialIcons';
 
 const Contact = () => {
   return (
-    <section id="contact" className="h-[90vh] ">
+    <section id="contact" className="mb-5">
       <h2 className="text-4xl font-mono font-bold text-center pt-5">Contact</h2>
-      <ContactForm />
+      {/* <ContactForm /> */}
       <ul className="flex w-[100%] md:w-[50vw] pt-10 md:pt-20 m-auto items-stretch justify-evenly md:justify-around text-4xl">
         <SocialIcons />
       </ul>
